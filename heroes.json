@@ -1,0 +1,54 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Первый герой",
+      "description": "Первый герой в рейтинге!",
+      "element": "fire"
+    },
+    {
+      "id": 2,
+      "name": "Неизвестный герой",
+      "description": "Скрывающийся в тени",
+      "element": "wind"
+    },
+    {
+      "id": 3,
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
+      "element": "water"
+    }
+  ],
+  "filters": [
+    {
+      "id": 1,
+      "type": "all",
+      "name": "Все",
+      "styles": "btn btn-outline-dark"
+    },
+    {
+      "id": 2,
+      "type": "fire",
+      "name": "Огонь",
+      "styles": "btn btn-danger"
+    },
+    {
+      "id": 3,
+      "type": "water",
+      "name": "Вода",
+      "styles": "btn btn-primary"
+    },
+    {
+      "id": 4,
+      "type": "wind",
+      "name": "Ветер",
+      "styles": "btn btn-success"
+    },
+    {
+      "id": 5,
+      "type": "earth",
+      "name": "Земля",
+      "styles": "btn btn-secondary"
+    }
+  ]
+}
