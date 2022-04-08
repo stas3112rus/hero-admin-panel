@@ -1,6 +1,11 @@
-import { createStore } from 'redux';
-import reducer from '../reducers';
+import heroes from '../reducers/heroes';
+import filters from '../reducers/filters';
+import { configureStore } from '@reduxjs/toolkit';
 
-const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = configureStore({
+    reducer: {heroes, filters},
+    middleware: getDefaultMiddleware => getDefaultMiddleware(),
+    devTools: process.env.NODE_EW !== 'production',    
+})
 
 export default store;

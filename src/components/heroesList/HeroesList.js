@@ -14,10 +14,14 @@ import './heroesList.scss'
 // Удаление идет и с json файла при помощи метода DELETE
 
 const HeroesList = () => {
-    const {heroes, heroesLoadingStatus} = useSelector(state => state);
+    const {heroes, heroesLoadingStatus} = useSelector(state => state.heroes);
     const dispatch = useDispatch();
     const {request} = useHttp();
    
+
+    console.log(heroes);
+    
+
     useEffect(() => {
         dispatch(heroesFetching());
         request("http://localhost:3001/heroes")
