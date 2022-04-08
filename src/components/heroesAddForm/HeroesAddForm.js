@@ -13,7 +13,10 @@ import {useHttp} from '../../hooks/http.hook';
 import { useDispatch, useSelector } from 'react-redux';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
-import { heroesFetching, updateHeroes, filtersFetching, filtersFetched, filtersFetchingError } from '../../actions';
+
+import {heroesFetching, updateHeroes} from '../../actions/heroes';
+import {filtersFetching, filtersFetched, filtersFetchingError} from '../../actions/filters';
+
 import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Spinner from '../spinner/Spinner';

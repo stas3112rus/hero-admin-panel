@@ -4,7 +4,9 @@ import { useDispatch, useSelector  } from 'react-redux';
 import { CSSTransition, TransitionGroup} from 'react-transition-group';
 
 
-import { heroesFetching, heroesFetched, heroesFetchingError, updateHeroes } from '../../actions';
+
+import {heroesFetching, heroesFetched, heroesFetchingError, updateHeroes} from '../../actions/heroes';
+
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 import './heroesList.scss'

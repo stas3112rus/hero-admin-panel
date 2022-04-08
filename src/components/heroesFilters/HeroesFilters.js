@@ -9,7 +9,9 @@
 // Представьте, что вы попросили бэкенд-разработчика об этом
 import {useHttp} from '../../hooks/http.hook';
 import { useDispatch, useSelector } from 'react-redux';
-import {heroesFetching, updateHeroes} from '../../actions';
+
+import {heroesFetching, updateHeroes} from '../../actions/heroes';
+
 import { useState, useEffect } from 'react';
 import Spinner from '../spinner/Spinner';
 
